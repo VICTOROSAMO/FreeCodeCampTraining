@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+        <div class="first">
+    <h1 id="title">Customer Satisfaction Survey Form</h1>
+
+    <p id="description">Kindly take your time to give feedback about our products and services</p>
+        </div>
+        <div class="container">
+
+    <form id="survey-form">
+     <label for="name" id="name-label">Enter your name:<input type="text" id="name" placeholder="Enter your name" required></label>
+     <label for="email" id="email-label">Enter your Email:<input type="email" id="email" placeholder= "Enter your email" required></label>
+     <label for="number" id="number-label" >Age(Optional):<input type="number" id="number" min="5" max = "50" placeholder="Specify the number"></label>
+
+   <label for="dropdown"> How would you rate our Products and Services
+    <select id="dropdown">
+       <option>(Give your Rating)</option>
+       <option>1</option>
+       <option>2</option>
+       <option>3</option>
+       <option>4</option>
+       <option>5</option>
+     </select>
+     </label>
+     <label> Which one did you get from us? <br><br>
+    <input type="radio" name="choice" value="prod" class="inline"> Products <br>
+    <input type="radio" name="choice" value="serv" class="inline">Services
+    </label>
+    <label>Which one(s) do you want us to improve? <br><br>
+    <input type="checkbox" value="pro" class="inline">Products <br>
+    <input type="checkbox" value="ser" class="inline">Services
+    </label>
+
+    <label>Any Comment or Suggestion on your choice<textarea placeholder="Tell us more about your choice"></textarea></label>
+
+  <button id="submit">Submit</button>
+    </form>
+        </div>
+    </main>
+  </body>
+</html>
